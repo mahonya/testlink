@@ -1478,27 +1478,10 @@ function buildTestExecResults(&$dbHandler,$cfg,$labels,$exec_info,$colspan,$show
 	if( !is_null($colspan) ) {
 		$td_colspan .= ' colspan="' . $colspan . '" '; 
 	}
-	
-	//change color results (c) mahon
-	switch($exec_info[0]['status']){
-	//blocked
-	case "b": 
-	    $color_TestExecResults="orange"; 
-	    break;
-	//passed
-	case "p":
-	    $color_TestExecResults="green"; 
-	    break;
-	//fail
-	case "f":
-	    $color_TestExecResults="red"; 
-	    break;
-	
-	}
 	    
 	$out .= '<tr><td width="20%" valign="top">' .
 			'<span class="label">' . $labels['last_exec_result'] . ':</span></td>' .
-			'<td '  .$td_colspan . '><b><font color="'.$color_TestExecResults .'">' . $testStatus ."<font></b></td></tr>\n" .
+			'<td '  .$td_colspan . '><b>' . $testStatus . "</b></td></tr>\n" .
     		'<tr><td width="' . $cfg['firstColWidth'] . '" valign="top">' . $labels['build'] .'</td>' . 
     		'<td '  .$td_colspan . '>' . htmlspecialchars($exec_info[0]['build_name']) . "</b></td></tr>\n" .
     		'<tr><td width="' . $cfg['firstColWidth'] . '" valign="top">' . $labels['tester'] .'</td>' . 
