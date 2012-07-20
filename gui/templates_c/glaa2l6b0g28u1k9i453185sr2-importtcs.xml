@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="" >
+<node_order><![CDATA[]]></node_order>
+<details><![CDATA[]]> 
+</details><testsuite name="Подключение по COM-порту" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[<p>Для работы программы необходимо наличие подключение по COM-порту к одному из датчиков сети &quot;Радиобарьер&quot;.</p>]]> 
+</details>
+<testcase internalid="25" name="Установление подключения">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[1]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Предусловия:</p>
+<ol>
+    <li>настроены параметры ком-порта;</li>
+    <li>к порту,&nbsp;указанному в настройках,&nbsp;подключен работоспособный датчик, готовый к обмену по COM-порту на указанной в настройках скорости.</li>
+    <li>Пункт меню &quot;Подключение-&gt;Подключиться&quot; не выделен,&nbsp;т.е. соединение не установлено.</li>
+</ol>
+<p>Сценарий:</p>
+<ol>
+    <li>выбрать пункт меню &quot;Подключение-&gt;Подключиться&quot;.</li>
+</ol>
+<p>&nbsp;</p>]]></summary>
+	<preconditions><![CDATA[<p>1. Пункт меню &quot;Подключение-&gt;Подключиться&quot; должен стать выделеннным.</p>
+<p>2. Через некоторое время должно быть установлено подключение, и в области &quot;Текущее подключениние&quot; должно отобразиться следующее:</p>
+<p>Статус: Есть подключение</p>
+<p>Тип: &lt;тип подключённого датчика&gt;</p>
+<p>Номер: &lt;номер подключённого датчика&gt;</p>
+<p>Версия:&nbsp;&lt;версия прошивки подключённого датчика&gt;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[3]]></importance>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[]]></actions>
+	<expectedresults><![CDATA[]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="27" name="Закрытие подключение">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[2]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Предусловия:</p>
+<ol>
+    <li>настроены параметры ком-порта;</li>
+    <li>к порту,&nbsp;указанному в настройках,&nbsp;подключен работоспособный  датчик, готовый к обмену по COM-порту на указанной в настройках  скорости.</li>
+    <li>пункт меню &quot;Подключение-&gt;Подключиться&quot; выделен,&nbsp;т.е. соединение установлено.</li>
+    <li>В области &quot;Текущеее подключение&quot; отображены параметры подключания.</li>
+</ol>
+<p>Сценарий:</p>
+<ol>
+    <li>выбрать пункт меню &quot;Подключение-&gt;Подключиться&quot;.</li>
+</ol>]]></summary>
+	<preconditions><![CDATA[<p>1. Пункт меню &quot;Подключение-&gt;Подключиться&quot; должен стать невыделеннным.</p>
+<p>2. Через некоторое время должно быть установлено отсутствие подключения. В области &quot;Текущее подключениние&quot; должно отобразиться следующее:</p>
+<p>Статус: Нет подключения</p>
+<p>Тип:</p>
+<p>Номер:</p>
+<p>Версия:</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="82" name="Отображение COM-портов в настройках">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[6]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Проверка автонахождения COM-портов</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Подсоединить несколько КСК к компьютеру</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Зайти в "Подключение\Настройки порта"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[в поле "Порт" должны отображаться все COM-порты установленные на компьютере]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Normal]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P3]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="116" name="Определение отключение КСК">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[21]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Выдача ошибки при отключении КСК (отключения COM-порта)</p>]]></summary>
+	<preconditions><![CDATA[<p>Подключить РС в сети&nbsp;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[После получения данных со всех РС в сети отключить КСК от компьютера]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[Сообщение о потери связи по COM-порту]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite><testsuite name="Работа с БД" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[<p>&nbsp;Тесты для проверки работы программы с БД</p>]]> 
+</details>
+<testcase internalid="78" name="Позитивный тест проверки работы с БД">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[4]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Проверить работу с БД при корректных настройках</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Ввести в настройки БД корректные данные</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Нажать кнопку "Проверить" в меню настройка БД]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[Должно появиться окно с надписью "Успешно"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="80" name="Негативный тест проверки работы с БД">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[5]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Тест проверки работы с БД при некорректных данных в настройках</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Ввести в произвольные поля настроек работы с БД не корректные данные</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Нажать кнопку "Проверить"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[Должно показаться сообщение с ошибкой.]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P2]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="106" name="Выбор сети">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[18]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Работа окна &quot;Выбор сети&quot;</p>]]></summary>
+	<preconditions><![CDATA[<p>Настроить параметры соединения с БД</p>
+<p>Проверить соединение с БД</p>
+<p>&nbsp;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Открыть окно "Выбор сети"
+Выбрать любую сеть]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[В окне "Выбор сети" должен быть список сетей с отображением имени сети и ее ID]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P2]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="108" name="Поиск сети по первым буквам">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[19]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Быстрый поиск при выбори сети</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Настроить работу с БД</p>
+<p>Проверить соединение с БД</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Открыть окно "Выбор сети"
+Попробовать найти любую сеть быстрым поиском по первым буквам названия]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[При наборе первых букв названия сети, указатель должен переходить на первую удовлетворяющую условию сеть]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite><testsuite name="Работа с сетью FT2" >
+<node_order><![CDATA[3]]></node_order>
+<details><![CDATA[<p>Работа программы с сетью FT2</p>]]> 
+</details>
+<testcase internalid="88" name="Отображение РС">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[9]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[]]></summary>
+	<preconditions><![CDATA[<p>Подключиться РС через КСК к компьютеру</p>
+<p>Настроить подключение</p>
+<p>&nbsp;</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Установить подключение
+Подождать получения ответа от всех РС в сети]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[Для всех РС в сети должны быть заполнены все поля таблицы списка устройств]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="104" name="Обновление информации о сети">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[17]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Обновление информации о сети вручную</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Подключить РС в сети</p>
+<p>Выбрать сеть</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Запросить обновление информации о РС]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[В процессе обновления строка таблицы должна менять цвет: отправлен запрос фон синий, принят стандартный.]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Normal]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P2]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite><testsuite name="Перепрошивка по КСК" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[<p>&nbsp;Перепрошивка датчиков подключенных к компьютеру по КСК</p>]]> 
+</details>
+<testcase internalid="84" name="Перепрошивка по КСК на основе типа">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[7]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Перепрошивка РС по КСК на снове его типа</p>]]></summary>
+	<preconditions><![CDATA[<p>Подключить РС по КСК</p>
+<p>Установить соединение в программе</p>
+<p>В настройках &quot;Файлы прошивок&quot; указать фаил и версию прошивки для данного типа РС</p>
+<p>Выбрать сеть</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Указать флаг "Прошивка на снове типа"
+Установить флаг "Прошить подключенное устройство"
+Нажать кнопку "Прошить"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[По окончанию в протоколе программы должно быть сообщение аналогичное следующему 
+"[07/11/12 09:58:26] Прошивка датчика: #РСИК(0), Успешно"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="86" name="Перепрошивка по КСК на основе выбранной прошивки">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[8]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Перепрошивка РС по КСК выбранным файлом прошивки</p>]]></summary>
+	<preconditions><![CDATA[<p>Подключить РС по КСК</p>
+<div>&nbsp;</div>
+<div>Установить соединение в программе</div>
+<div>&nbsp;</div>
+<div>Выбрать сеть</div>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Указать флаг "Новая прошивка\Задать вручную"
+Выбрать фаил прошивки
+Установить флаг "Прошить подключенное устройство"
+Нажать кнопку "Прошить"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[По окончанию в протоколе программы должно быть сообщение аналогичное следующему 
+"[07/11/12 09:58:26] Прошивка датчика: #РСИК(0), Успешно"]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite><testsuite name="Перепрошивка по радиоканалу" >
+<node_order><![CDATA[5]]></node_order>
+<details><![CDATA[<p>&nbsp;Перепрошивка датчиков по радиоканалу через сеть FT2</p>]]> 
+</details>
+<testcase internalid="96" name="Перепрошивка РС по РК в прямой видимости на основе типа">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[13]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Перепрошивка РС на основе типа по радиоканалу</p>]]></summary>
+	<preconditions><![CDATA[<p>Установить подключение с РС находящимся в сети</p>
+<p>Выбрать сеть</p>
+<p>Настроить фаил прошивке на основе типа РС</p>
+<p>Все прошиваемые РС должны видеть, подключенный РС, без ретрансляций</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Установить флаг "прошивка на основе типа РС"
+Установить флаги выбора у произвольного кол-ва РС больше одного.
+Прошить РС]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[После прошивки РС версия в таблице должна обновиться
+При подключении РС к FT*Config должна обнаружиться новая прошивка]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P0]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="98" name="Перепрошивка РС по РК через ретрансляцию на основе типа">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[14]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<div>Перепрошивка РС на основе типа&nbsp;по РК через ретрансляцию пакетов другими РС</div>]]></summary>
+	<preconditions><![CDATA[<p>Установить подключение с РС находящимся в сети</p>
+<div>&nbsp;</div>
+<div>Выбрать сеть</div>
+<div>&nbsp;</div>
+<div>Настроить фаил прошивке на основе типа РС</div>
+<div>&nbsp;</div>
+<div>Прошиваемые РС должны видеть, подключенный РС, с ретрансляцией через другие РС</div>
+<div>&nbsp;</div>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Установить флаг "прошивка на основе типа РС"
+Установить флаги выбора у произвольного кол-ва РС больше одного.
+Прошить РС]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[После прошивки РС версия в таблице должна обновиться
+При подключении РС к FT*Config должна обнаружиться новая прошивка]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P0]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="100" name="Перепрошивка РС по РК в прямой видимости выбранной прошивкой">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[15]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Перепрошивка РС файлом прошивки по РК в прямой видимости</p>]]></summary>
+	<preconditions><![CDATA[<p>Установить подключение с РС находящимся в сети</p>
+<div>&nbsp;</div>
+<div>Выбрать сеть</div>
+<div>&nbsp;</div>
+<div>Выбрать фаил прошивки и установить флаг прошивки файлом</div>
+<div>&nbsp;</div>
+<div>Все прошиваемые РС должны видеть, подключенный РС, без ретрансляций</div>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Установить флаг "прошивка на основе типа РС"
+Установить флаги выбора у произвольного кол-ва РС больше одного.
+Прошить РС]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[После прошивки РС версия в таблице должна обновиться
+При подключении РС к FT*Config должна обнаружиться новая прошивка]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P0]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="102" name="Перепрошивка РС по РК через ретрансляцию выбранной прошивкой">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[16]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Перепрошивка РС выбранным файлом прошивки по РК через ретрансляцию</p>]]></summary>
+	<preconditions><![CDATA[<p>Установить подключение с РС находящимся в сети</p>
+<div>&nbsp;Выбрать сеть</div>
+<div>&nbsp;</div>
+<div><span style="background-color: rgb(238, 238, 238); font-family: 'Trebuchet MS', Verdana, Arial, sans-serif; text-align: left; ">Выбрать фаил прошивки и установить флаг прошивки файлом</span></div>
+<div>&nbsp;</div>
+<div>Все прошиваемые РС должны видеть, подключенный РС, без ретрансляций</div>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Установить флаг "прошивка на основе типа РС"
+Установить флаги выбора у произвольного кол-ва РС больше одного.
+Прошить РС]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[После прошивки РС версия в таблице должна обновиться
+При подключении РС к FT*Config должна обнаружиться новая прошивка]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Critical]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P0]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite><testsuite name="Логи" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[<p>&nbsp;Проверка составления логов программой</p>]]> 
+</details>
+<testcase internalid="90" name="Протокол в программе">
+	<node_order><![CDATA[100]]></node_order>
+	<externalid><![CDATA[10]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Ведение протокола работы программы</p>]]></summary>
+	<preconditions><![CDATA[<p>Подключиться к РС в сети</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Выбрать сеть
+Прошить РС по КСК
+Прошить несколько РС по РК 
+Выбрать сеть]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[В протоколе программы должна быть информация:
+1.	Начало и окончание работы с сетью, при этом сохранять имя сети и ее ID.
+2.	Информацию о каждой процедуре перепрошивки: успешно или нет, номер РС, сколько времени заняла.
+]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="92" name="Файл протокола работы программы">
+	<node_order><![CDATA[101]]></node_order>
+	<externalid><![CDATA[11]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Сохранение протокола работы программы в фаил</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Подключиться к РС</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Выбрать сеть
+Прошить РС по КСК
+Прошить несколько РС по РК 
+Выбрать другую сеть]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[В файле протокола программы должна быть информация:
+1.	Начало и окончание работы с сетью, при этом сохранять имя сети и ее ID.
+2.	Информацию о каждой процедуре перепрошивки: успешно или нет, номер РС, сколько времени заняла.
+]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="94" name="Лог синхронизации с БД">
+	<node_order><![CDATA[102]]></node_order>
+	<externalid><![CDATA[12]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;Лог программы для синхронизации с БД</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Подключиться к РС в сети</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Выбрать сеть
+Прошить РС по КСК
+Прошить несколько РС по РК]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[В файле лога должна появиться информация о каждой прошивки РС с полями:
+1.Дата
+2.Время
+3.ID сети
+4.Серийный номер РМ
+5.№ РС
+6.Тип РС
+7.Старая версия прошивки ВУ
+8.Новая версия прошивки ВУ]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Blocker]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P0]]></value>
+	</custom_field>
+</custom_fields></testcase>
+
+<testcase internalid="114" name="Отчет о работе с сетью">
+	<node_order><![CDATA[103]]></node_order>
+	<externalid><![CDATA[20]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>&nbsp;формирование отчета о работе с сетью</p>]]></summary>
+	<preconditions><![CDATA[<p>&nbsp;Подключить РС в сети</p>
+<p>Выбрать сеть</p>
+<p>Прошить несколько устройств</p>]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[Step to reproduce]]></name>
+		<value><![CDATA[Создать отчет о работе с сеть]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Expected result]]></name>
+		<value><![CDATA[Программа должна запросить ФИО оператора.
+Должен создаеться фаил в шапке которого ФИО,Дата,Название сети
+Фаил должен содержать отчет о работе с сетью]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Severity]]></name>
+		<value><![CDATA[Major]]></value>
+	</custom_field>	<custom_field>
+		<name><![CDATA[Priority]]></name>
+		<value><![CDATA[P1]]></value>
+	</custom_field>
+</custom_fields></testcase>
+</testsuite></testsuite>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+	<testplan>
+		<name><![CDATA[Все тест-кейсы]]></name>
+		
+		
+<executables>
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Установление подключения]]></name>
+			<externalid><![CDATA[1]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Установление подключения]]></name>
+			<externalid><![CDATA[1]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Закрытие подключение]]></name>
+			<externalid><![CDATA[2]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Отображение автоопределяемых COM-портов в настройках]]></name>
+			<externalid><![CDATA[6]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Отображение автоопределяемых COM-портов в настройках]]></name>
+			<externalid><![CDATA[6]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Определение отключение КСК]]></name>
+			<externalid><![CDATA[21]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Позитивный тест проверки работы с БД]]></name>
+			<externalid><![CDATA[4]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Негативный тест проверки работы с БД]]></name>
+			<externalid><![CDATA[5]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Выбор сети]]></name>
+			<externalid><![CDATA[18]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Поиск сети по первым буквам]]></name>
+			<externalid><![CDATA[19]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Поиск сети по первым буквам]]></name>
+			<externalid><![CDATA[19]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Отображение РС]]></name>
+			<externalid><![CDATA[9]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Обновление информации о сети]]></name>
+			<externalid><![CDATA[17]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Обновление информации о сети]]></name>
+			<externalid><![CDATA[17]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка по КСК на основе типа]]></name>
+			<externalid><![CDATA[7]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка по КСК на основе выбранной прошивки]]></name>
+			<externalid><![CDATA[8]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка РС по РК в прямой видимости на основе типа]]></name>
+			<externalid><![CDATA[13]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка РС по РК через ретрансляцию на основе типа]]></name>
+			<externalid><![CDATA[14]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка РС по РК в прямой видимости выбранной прошивкой]]></name>
+			<externalid><![CDATA[15]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Перепрошивка РС по РК через ретрансляцию выбранной прошивкой]]></name>
+			<externalid><![CDATA[16]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Протокол в программе]]></name>
+			<externalid><![CDATA[10]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Файл протокола работы программы]]></name>
+			<externalid><![CDATA[11]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Файл протокола работы программы]]></name>
+			<externalid><![CDATA[11]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Лог синхронизации с БД]]></name>
+			<externalid><![CDATA[12]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Лог синхронизации с БД]]></name>
+			<externalid><![CDATA[12]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+	<link>
+		<platform>
+			<name><![CDATA[]]></name>
+		</platform>
+		<testcase>
+			<name><![CDATA[Отчет о работе с сетью]]></name>
+			<externalid><![CDATA[20]]></externalid>
+			<version><![CDATA[1]]></version>
+			<execution_order><![CDATA[1]]></execution_order>
+		</testcase>
+</link>
+
+</executables>
+
+	</testplan>
